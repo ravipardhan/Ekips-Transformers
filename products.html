@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Our Transformer Products | Ekips Transformers Manufacturer India</title>
+  <meta name="description" content="Explore the complete range of products from Ekips Transformers, a leading manufacturer in India. We offer Power, Distribution, Isolation, UPS, and custom transformers.">
+  <meta name="keywords" content="Transformer Products, Transformer Services, Power Transformers, Custom Winding, Transformer Repair">
+  <link rel="icon" href="logo.jpg" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Extra decoration for services page */
+    /* Animations */
+    @keyframes float-slow {
+      0% { transform: translate(0, 0); }
+      50% { transform: translate(0, -20px); }
+      100% { transform: translate(0, 0); }
+    }
+    @keyframes pulse-glow {
+      0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4); }
+      70% { box-shadow: 0 0 0 20px rgba(212, 175, 55, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+    }
+    @keyframes gradient-text {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    @keyframes rubberBand {
+      0% { transform: scale3d(1, 1, 1); }
+      30% { transform: scale3d(1.25, 0.75, 1); }
+      40% { transform: scale3d(0.75, 1.25, 1); }
+      50% { transform: scale3d(1.15, 0.85, 1); }
+      65% { transform: scale3d(0.95, 1.05, 1); }
+      75% { transform: scale3d(1.05, 0.95, 1); }
+      100% { transform: scale3d(1, 1, 1); }
+    }
+
+    .services-section {
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Hero Enhancements */
+    .services-hero {
+      position: relative;
+      overflow: hidden;
+    }
+    .services-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%);
+      z-index: 1;
+    }
+    .services-hero .hero-content {
+      position: relative;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 3rem;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .services-hero h1 {
+      background: linear-gradient(to right, #fff, #d4af37, #fff);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradient-text 5s ease infinite;
+    }
+
+    /* Service Card Enhancements */
+    .service-card {
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      background: rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .service-card:hover {
+      transform: translateY(-15px) scale(1.03);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+      border-color: var(--primary);
+      z-index: 10;
+    }
+    .service-card-img img {
+      transition: transform 0.8s ease;
+    }
+    .service-card:hover .service-card-img img {
+      transform: scale(1.15) rotate(2deg);
+    }
+    .service-icon-float {
+      animation: float-slow 4s ease-in-out infinite;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .service-card:hover .service-icon-float {
+      background-color: var(--secondary);
+      transform: rotate(360deg) scale(1.2);
+      animation: none;
+    }
+
+    /* Background Blobs */
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      z-index: -1;
+      opacity: 0.3;
+      animation: float-slow 10s infinite alternate;
+    }
+    .blob-1 { top: 0; left: 0; width: 500px; height: 500px; background: var(--primary); }
+    .blob-2 { bottom: 0; right: 0; width: 600px; height: 600px; background: var(--secondary); animation-delay: -5s; }
+    .blob-3 { top: 50%; left: 50%; transform: translate(-50%, -50%); width: 400px; height: 400px; background: #5856d6; opacity: 0.15; }
+
+    /* Process Section Enhancements */
+    .process-step {
+      position: relative;
+      padding: 2rem;
+      border-radius: 15px;
+      transition: background 0.3s;
+    }
+    .process-step:hover {
+      background: rgba(255, 255, 255, 0.03);
+    }
+    .process-icon {
+      width: 80px;
+      height: 80px;
+      line-height: 80px;
+      background: rgba(212, 175, 55, 0.1);
+      border-radius: 50%;
+      margin: 0 auto 1.5rem;
+      transition: all 0.5s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .process-step:hover .process-icon {
+      transform: scale(1.1) rotate(10deg);
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 0 0 10px rgba(212, 175, 55, 0.2);
+      animation: pulse-glow 2s infinite;
+    }
+
+    /* Why Choose Hover */
+    .choice-item:hover i {
+      animation: rubberBand 1s;
+    }
+  </style>
+</head>
+<body class="theme-professional">
+  <header class="site-header" data-aos="fade-down">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <img src="logo.jpg" alt="Ekips Transformers Logo" class="header-logo">
+        <div class="brand-info">
+          <span class="brand-name">Ekips Transformers</span>
+          <span class="brand-tagline">Engineering Power</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="industries.html">Industries</a>
+        <a href="why-choose-us.html">Why Choose Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="request-quote.html" class="btn-nav">Request a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="services-hero" style="background-image: url('https://source.unsplash.com/1600x900/?technology,grid,abstract');">
+      <div class="hero-content" data-aos="fade-up">
+        <h1>Our Products</h1>
+        <p class="lead">A comprehensive range of transformers engineered for performance and reliability.</p>
+        <div class="hero-buttons" style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="#expertise" class="btn-cta">Explore Products</a>
+          <a href="request-quote.html" class="btn-secondary on-dark">Request a Quote</a>
+        </div>
+      </div>
+    </header>
+    <section class="services-section" id="expertise">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="container">
+        <div class="services-grid">
+
+          
+          <!-- 1. Isolation Transformer -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card-img">
+              <img src="Isolation xmer.jpeg" alt="Isolation Transformer" loading="lazy">
+            </div>
+            <div class="service-icon-float"><i class="fas fa-shield-alt"></i></div>
+            <div class="service-card-content">
+              <h3>Isolation Transformer</h3>
+              <p>Ensures complete galvanic isolation for noise reduction and safety, protecting sensitive electronic equipment from voltage spikes and line disturbances.</p>
+              <a href="request-quote.html" class="btn-more-info" style="margin-top: auto;">Enquire Now</a>
+            </div>
+          </div>
+
+          <!-- 2. Three Phase Transformer -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="service-card-img">
+              <img src="Three phassw xmer.jpeg" alt="Three Phase Transformer" loading="lazy">
+            </div>
+            <div class="service-icon-float"><i class="fas fa-bolt"></i></div>
+            <div class="service-card-content">
+              <h3>Three Phase Transformer</h3>
+              <p>High-performance transformers designed for industrial power distribution, ensuring stable voltage for heavy machinery and grid applications.</p>
+              <a href="request-quote.html" class="btn-more-info" style="margin-top: auto;">Enquire Now</a>
+            </div>
+          </div>
+
+          <!-- 3. Lift UPS 3-Phase Transformer -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card-img">
+              <img src="5.1.jpeg" alt="Lift UPS Transformer" loading="lazy">
+            </div>
+            <div class="service-icon-float"><i class="fas fa-arrow-up"></i></div>
+            <div class="service-card-content">
+              <h3>Lift UPS 3-Phase Transformer</h3>
+              <p>Specialized backup power solutions for elevators and escalators, engineered to handle high inrush currents and ensure passenger safety.</p>
+              <a href="request-quote.html" class="btn-more-info" style="margin-top: auto;">Enquire Now</a>
+            </div>
+          </div>
+
+          <!-- 4. Buck Boost Transformer -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="service-card-img">
+              <img src="Buckboost xmer.jpeg" alt="Buck Boost Transformer" loading="lazy">
+            </div>
+            <div class="service-icon-float"><i class="fas fa-level-up-alt"></i></div>
+            <div class="service-card-content">
+              <h3>Buck Boost Transformer</h3>
+              <p>Efficient voltage correction solution for stabilizing line voltage by 5% to 20%, ideal for HVAC systems and motor applications.</p>
+              <a href="request-quote.html" class="btn-more-info" style="margin-top: auto;">Enquire Now</a>
+            </div>
+          </div>
+
+          <!-- 5. Inverter Transformer -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card-img">
+              <img src="4 (2).jpeg" alt="Inverter Transformer" loading="lazy">
+            </div>
+            <div class="service-icon-float"><i class="fas fa-solar-panel"></i></div>
+            <div class="service-card-content">
+              <h3>Inverter Transformer</h3>
+              <p>Optimized for renewable energy systems, converting DC to AC with high efficiency for solar and wind power integration.</p>
+              <a href="request-quote.html" class="btn-more-info" style="margin-top: auto;">Enquire Now</a>
+            </div>
+          </div>
+
+          <!-- 6. Control Transformer -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="350">
+            <div class="service-card-img">
+              <img src="Control xmer.jpeg" alt="Control Transformer" loading="lazy">
+            </div>
+            <div class="service-icon-float"><i class="fas fa-cogs"></i></div>
+            <div class="service-card-content">
+              <h3>Control Transformer</h3>
+              <p>Provides precise voltage regulation for industrial control panels, ensuring reliable operation of relays, contactors, and solenoids.</p>
+              <a href="request-quote.html" class="btn-more-info" style="margin-top: auto;">Enquire Now</a>
+            </div>
+          </div>
+
+          <!-- 7. Toroidal Transformer -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card-img">
+              <img src="1 (2).jpeg" alt="Toroidal Transformer" loading="lazy">
+            </div>
+            <div class="service-icon-float"><i class="fas fa-circle-notch"></i></div>
+            <div class="service-card-content">
+              <h3>Toroidal Transformer</h3>
+              <p>Compact and highly efficient with low magnetic interference, perfect for medical devices, audio equipment, and sensitive instrumentation.</p>
+              <a href="request-quote.html" class="btn-more-info" style="margin-top: auto;">Enquire Now</a>
+            </div>
+          </div>
+
+          <!-- 8. Electrical Dimmer -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="450">
+            <div class="service-card-img">
+              <img src="5 (2).jpeg" alt="Electrical Dimmer" loading="lazy">
+            </div>
+            <div class="service-icon-float"><i class="fas fa-sliders-h"></i></div>
+            <div class="service-card-content">
+              <h3>Electrical Dimmer</h3>
+              <p>Variable auto-transformers offering smooth, stepless voltage control for laboratory testing and industrial speed regulation.</p>
+              <a href="request-quote.html" class="btn-more-info" style="margin-top: auto;">Enquire Now</a>
+            </div>
+          </div>
+
+          <!-- 9. Line Choke -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-card-img">
+              <img src="2 (2).jpeg" alt="Line Choke" loading="lazy">
+            </div>
+            <div class="service-icon-float"><i class="fas fa-wave-square"></i></div>
+            <div class="service-card-content">
+              <h3>Line Choke</h3>
+              <p>Protects Variable Frequency Drives (VFDs) and motors from transient surges and harmonic distortion, extending equipment lifespan.</p>
+              <a href="request-quote.html" class="btn-more-info" style="margin-top: auto;">Enquire Now</a>
+            </div>
+          </div>
+
+          <!-- 10. ARD / UPS Transformers -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="550">
+            <div class="service-card-img">
+              <img src="6 (2).jpeg" alt="ARD / UPS Transformers" loading="lazy">
+            </div>
+            <div class="service-icon-float"><i class="fas fa-battery-full"></i></div>
+            <div class="service-card-content">
+              <h3>ARD / UPS Transformers</h3>
+              <p>Critical power components for Auto Rescue Devices and UPS systems, ensuring uninterrupted power supply during outages.</p>
+              <a href="request-quote.html" class="btn-more-info" style="margin-top: auto;">Enquire Now</a>
+            </div>
+          </div>
+
+          <!-- 11. Auto Transformer -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-card-img">
+              <img src="7 (2).jpeg" alt="Auto Transformer" loading="lazy">
+            </div>
+            <div class="service-icon-float"><i class="fas fa-random"></i></div>
+            <div class="service-card-content">
+              <h3>Auto Transformer</h3>
+              <p>Compact and cost-effective voltage transformation for non-isolated applications, offering high efficiency and smaller footprint.</p>
+              <a href="request-quote.html" class="btn-more-info" style="margin-top: auto;">Enquire Now</a>
+            </div>
+          </div>
+
+          <!-- 12. Rectifier Transformer -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="650">
+            <div class="service-card-img">
+              <img src="18.jpeg" alt="Rectifier Transformer" loading="lazy">
+            </div>
+            <div class="service-icon-float"><i class="fas fa-charging-station"></i></div>
+            <div class="service-card-content">
+              <h3>Rectifier Transformer</h3>
+              <p>Designed for AC to DC conversion applications in electrochemical and industrial processes, handling high current harmonics.</p>
+              <a href="request-quote.html" class="btn-more-info" style="margin-top: auto;">Enquire Now</a>
+            </div>
+          </div>
+
+          <!-- 13. Lighting Transformer -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="700">
+            <div class="service-card-img">
+              <img src="17.jpeg" alt="Lighting Transformer" loading="lazy">
+            </div>
+            <div class="service-icon-float"><i class="fas fa-lightbulb"></i></div>
+            <div class="service-card-content">
+              <h3>Lighting Transformer</h3>
+              <p>Stable power supply for industrial and commercial lighting systems, ensuring longevity of lighting fixtures.</p>
+              <a href="request-quote.html" class="btn-more-info" style="margin-top: auto;">Enquire Now</a>
+            </div>
+          </div>
+
+          <!-- 14. Furnace Transformer -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="750">
+            <div class="service-card-img">
+              <img src="10.jpeg" alt="Furnace Transformer" loading="lazy">
+            </div>
+            <div class="service-icon-float"><i class="fas fa-fire"></i></div>
+            <div class="service-card-content">
+              <h3>Furnace Transformer</h3>
+              <p>Heavy-duty transformers built to withstand the high currents and mechanical stresses of electric arc furnaces.</p>
+              <a href="request-quote.html" class="btn-more-info" style="margin-top: auto;">Enquire Now</a>
+            </div>
+          </div>
+
+          <!-- 15. Step-Up Transformer -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="800">
+            <div class="service-card-img">
+              <img src="21.jpeg" alt="Step-Up Transformer" loading="lazy">
+            </div>
+            <div class="service-icon-float"><i class="fas fa-arrow-up"></i></div>
+            <div class="service-card-content">
+              <h3>Step-Up Transformer</h3>
+              <p>Increases voltage for efficient long-distance power transmission or specific equipment requirements.</p>
+              <a href="request-quote.html" class="btn-more-info" style="margin-top: auto;">Enquire Now</a>
+            </div>
+          </div>
+
+          <!-- 16. Step-Down Transformer -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="850">
+            <div class="service-card-img">
+              <img src="13.jpeg" alt="Step-Down Transformer" loading="lazy">
+            </div>
+            <div class="service-icon-float"><i class="fas fa-arrow-down"></i></div>
+            <div class="service-card-content">
+              <h3>Step-Down Transformer</h3>
+              <p>Safely reduces high transmission voltages to usable operating levels for industrial and domestic use.</p>
+              <a href="request-quote.html" class="btn-more-info" style="margin-top: auto;">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-section" data-aos="zoom-in">
+      <div class="container">
+        <h2>Have a Project in Mind?</h2>
+        <p>Let's discuss your transformer requirements. Contact us for a personalized quote.</p>
+        <a href="contact.html" class="btn-cta">Contact Us</a>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col contact-col" data-aos="fade-up">
+          <h4>Contact Us</h4>
+          <address>
+            Vatva, Ahmedabad<br>
+            Gujarat, 382445
+          </address>
+          <p>
+            <a href="tel:+919978655966">+91 9978655966</a>
+          </p>
+          <p><a href="mailto:ekipstransformers@gmail.com">ekipstransformers@gmail.com</a></p>
+        </div>
+
+        <div class="footer-col useful-links" data-aos="fade-up" data-aos-delay="100">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col about-col" data-aos="fade-up" data-aos-delay="200">
+          <h4>About</h4>
+          <p class="lead">Ekips Transformers specializes in manufacturing high-quality power and distribution transformers.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <small>&copy; <span id="year"></span> Ekips Transformers — All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+  <div class="fixed-buttons">
+    <a href="https://wa.me/919978655966" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="tel:+919978655966" class="call-btn"><i class="fas fa-phone"></i></a>
+  </div>
+</body>
+</html>
